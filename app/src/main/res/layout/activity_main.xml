@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".RegistrarUsuario">
+
+
+    <TextView
+        android:id="@+id/tv_bienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulo"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:textColor="#3F630D"
+        android:layout_marginTop="35dp"/>
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="260dp"
+        android:layout_height="198dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/logo"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logotipo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/icon_person"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="#3F630D"
+        app:endIconMode="clear_text">
+
+        <EditText
+            android:id="@+id/et_usuario"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:hint="@string/ETusuario"
+            android:inputType="textPersonName"
+            tools:ignore="TextContrastCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/lock"
+        android:layout_marginTop="20dp"
+        app:cursorColor="#FF0000"
+        app:boxStrokeColor="#3F630D"
+        app:endIconMode="password_toggle">
+
+        <EditText
+            android:id="@+id/et_contrasena"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:hint="@string/ETcontrasena"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_inicio"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_inicio"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#3F630D"
+        android:backgroundTint="#E8AA0B"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+    <TextView
+        android:id="@+id/tv_registrarse1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/TVcuenta"/>
+    <TextView
+        android:id="@+id/tv_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="16sp"
+        android:textColor="#3F630D"
+        android:text="@string/TVregistrate"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recuperar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/TVrecuperar"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#3F630D"/>
+
+</LinearLayout>

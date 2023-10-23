@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Green_Garden_G3</string>
+    <string name="Titulo">Bienvenido</string>
+    <string name="Titulo_registrarse">Registrarse</string>
+    <string name="logo">Logotipo</string>
+    <string name="btn_inicio">Iniciar sesión</string>
+    <string name="btn_registrarse">Crear cuenta</string>
+    <string name="ETusuario">Introduce tu usuario</string>
+    <string name="ETcontrasena">Introduce tu contraseña</string>
+    <string name="TVinicio">¿Ya tienes cuenta?</string>
+    <string name="TViniciar">Iniciar sesión</string>
+    <string name="TVcuenta">¿No tienes cuenta?</string>
+    <string name="TVregistrate">Crear cuenta</string>
+    <string name="TVrecuperar">Recuperar Contraseña</string>
+    <string name="title_activity_recuperar">Recuperar</string>
+    <string name="ETnombre">Introduce tu nombre</string>
+    <string name="ETapellidos">Introduce tus apellidos</string>
+    <string name="ETfechaN">Introduce tu fecha de nacimiento</string>
+    <string name="ETcorreo">Introduce tu correo</string>
+    <string name="ETtelefono">Introduce tu telefono</string>
+    <string name="ETcontraseña">Introduce tu contraseña</string>
+</resources>
