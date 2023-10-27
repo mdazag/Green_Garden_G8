@@ -34,7 +34,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,27 +76,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/calendar"
-        app:boxStrokeColor="#3F630D"
-        app:endIconMode="clear_text"
-        android:layout_marginTop="20dp">
-
-        <EditText
-            android:id="@+id/et_fecha"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:autofillHints="name"
-            android:hint="@string/ETfechaN"
-            android:inputType="date"
-            android:focusable="false"
-            android:clickable="true"
-            tools:ignore="TextContrastCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/email"
         app:boxStrokeColor="#3F630D"
         app:endIconMode="clear_text"
@@ -118,21 +96,18 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/telefono"
+        app:startIconDrawable="@drawable/lock"
         app:boxStrokeColor="#3F630D"
-        app:endIconMode="clear_text"
-        android:layout_marginTop="20dp"
-        app:helperTextTextColor="#FF0000"
-        app:counterEnabled="true"
-        app:counterMaxLength="10">
+        app:endIconMode="password_toggle"
+        android:layout_marginTop="10dp">
 
         <EditText
-            android:id="@+id/et_celular"
+            android:id="@+id/et_password"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:autofillHints="name"
-            android:hint="@string/ETtelefono"
-            android:inputType="phone"
+            android:hint="@string/ETcontraseña"
+            android:inputType="textPassword"
             tools:ignore="TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -146,11 +121,11 @@
         android:layout_marginTop="10dp">
 
         <EditText
-            android:id="@+id/et_password"
+            android:id="@+id/et_password1"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:autofillHints="name"
-            android:hint="@string/ETcontraseña"
+            android:hint="@string/ETcontrasena2"
             android:inputType="textPassword"
             tools:ignore="TextContrastCheck" />
 
@@ -193,8 +168,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
-
 
 </LinearLayout>

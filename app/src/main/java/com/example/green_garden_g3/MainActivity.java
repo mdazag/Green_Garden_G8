@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,13 +14,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       TextView registro = findViewById(R.id.tv_registro);
-       TextView recuperar = findViewById(R.id.recuperar);
+        Button menu = findViewById(R.id.btn_inicio);
+        TextView registro = findViewById(R.id.tv_registro);
 
         Intent resgistra = new Intent(getApplicationContext(), RegistrarUsuario.class);
-        Intent recupera = new Intent(getApplicationContext(), Recupera.class);
+        Intent ingresa = new Intent(getApplicationContext(), Menu.class);
 
         registro.setOnClickListener(view -> startActivity(resgistra));
-        recuperar.setOnClickListener(view -> startActivity(recupera));
+        menu.setOnClickListener(view -> startActivity(ingresa));
+
     }
 }

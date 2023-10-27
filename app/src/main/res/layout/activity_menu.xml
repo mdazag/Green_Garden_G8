@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Menu">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end"
+        android:src="@drawable/logotipo"
+        android:contentDescription="@string/logo"/>
+
+    <TextView
+        android:id="@+id/tit_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_menu"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#3F630D"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/img_consumo"
+            android:layout_width="178dp"
+            android:layout_height="148dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/img_consumo"
+            android:src="@drawable/categoria"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="148dp"
+            android:gravity="center"
+            android:text="@string/TV_consumo"
+            android:textSize="26sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <ImageButton
+            android:id="@+id/img_estadistica"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/img1_estadistica"
+            android:src="@drawable/estadistica" />
+
+        <TextView
+            android:id="@+id/estadistica"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="@string/TV_estadistica"
+            android:textSize="26sp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/img_consejo"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/img2_consejo"
+            android:src="@drawable/consejos"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="@string/TV_consejos"
+            android:textSize="26sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cerrar"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_cerrar"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#3F630D"
+        android:backgroundTint="#E8AA0B"/>
+
+
+</LinearLayout>

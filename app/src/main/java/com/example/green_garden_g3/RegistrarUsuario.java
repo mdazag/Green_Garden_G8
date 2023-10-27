@@ -2,18 +2,15 @@ package com.example.green_garden_g3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DatePickerDialog;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.Calendar;
 
 public class RegistrarUsuario extends AppCompatActivity {
 
-    private EditText  fecha;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +24,7 @@ public class RegistrarUsuario extends AppCompatActivity {
         iniciar.setOnClickListener(view -> startActivity(inicio));
         login.setOnClickListener(view -> startActivity(sesion));
 
-        fecha = findViewById(R.id.et_fecha);
+       /* fecha = findViewById(R.id.et_fecha);
         fecha.setOnClickListener(view -> {
             final Calendar calendar = Calendar.getInstance();
             int year = calendar.get(Calendar.YEAR);
@@ -40,6 +37,6 @@ public class RegistrarUsuario extends AppCompatActivity {
         }, year, month, day);
 
         datePickerDialog.show();
-});
+});*/
     }
 }
