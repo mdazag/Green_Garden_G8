@@ -35,7 +35,6 @@ public class Dao {
     }
 
     public boolean putRegistro(Registro registro) {
-
         return true;
     }
 }
