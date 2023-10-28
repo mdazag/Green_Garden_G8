@@ -3,6 +3,7 @@ package com.example.green_garden_g3.clases;
 import java.util.HashMap;
 
 public class Dao {
+    // Métodos
     public HashMap<String, Planta> getPlantas() {
         HashMap<String, Planta> map = new HashMap<>();
 
